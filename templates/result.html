@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Report</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #d3d3d3; /* Light gray background */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            width: 80%; /* Extra large card */
+            padding: 20px;
+        }
+        .card-title {
+            font-size: 2rem; /* Increase font size */
+            text-align: center;
+        }
+        .card-text {
+            font-size: 1.5rem; /* Increase font size */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10"> <!-- Increase width -->
+                <div class="card bg-light text-dark">
+                    <div class="card-body">
+                        <h5 class="card-title"><u>Patient Report</u></h5>
+                        <p class="card-text">{{ msg|safe }}</p>
+                        <p class="card-text">{{ msg2|safe }}</p>
+                        <p class="card-text">{{ msg3|safe }}</p>
+                    </div>
+                </div>
+                <div class="text-center mt-3">
+                    <a href="{{url_for('index')}}" class="btn btn-danger btn-lg">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Basic -->
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+     <!-- Site Metas -->
+    <title>Disease Gene Lab</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/pogo-slider.min.css')}}">
+	<!-- Site CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/responsive.css')}}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/custom.css')}}">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+
+
+	<!-- Start top bar -->
+	<div class="main-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="left-top">
+
+
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="wel-nots">
+						<p>Welcome to Our Disease Gene Lab!</p>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End top bar -->
+
+	<!-- Start header -->
+	<header class="top-header">
+		<nav class="navbar header-nav navbar-expand-lg">
+            <div class="container">
+				<a class="navbar-brand" href="index.html"><img src="{{url_for('static',filename='images/logo.png')}}" alt="image"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                    <ul class="navbar-nav">
+                  
+                        <li><a class="nav-link" href="{{url_for('about')}}">About Us</a></li>
+                        <li><a class="nav-link" href="{{url_for('training')}}">Training</a></li>
+						<li><a class="nav-link" href="{{url_for('prediction')}}">Prediction</a></li>
+						<li><a class="nav-link active" href="{{url_for('index')}}">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+	</header>
+	<!-- End header -->
+
+
+
+	<!-- Start About us -->
+	<div id="about" class="about-box">
+		<div class="about-a1">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="title-box">
+							<h2>About Us</h2>
+							<marquee><strong><h3><b>*Your Health is Our Priority*  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp *We Care For You*</b></h3></strong></marquee>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<div class="row align-items-center about-main-info">
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<h2><u> Welcome to Disease Gene Lab </u></h2>
+								<h3>Hospitals complement and amplify the effectiveness of many other parts of the health system, providing continuous availability of services for acute and complex conditions. They concentrate scarce resources within well-planned referral networks to respond efficiently to population health needs. They are an essential element of Universal Health Coverage (UHC) and will be critical to meeting the Sustainable Development Goals (SDG).
+
+Hospitals are also an essential part of health system development. Currently, external pressures, health systems shortcomings and hospital sector deficiencies are driving a new vision for hospitals in many parts of the world. In this vision, they have a key role to play to support other healthcare providers and for community outreach and home-based services and are essential in a well-functioning referral network.
+
+Hospitals matter to people and often mark central points in their lives. They also matter to health systems by being instrumental for care coordination and integration. They often provide a setting for education of doctors, nurses and other health-care professionals and are a critical base for clinical research. </h3>
+
+
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-12">
+										<li>
+											<img src="{{url_for('static',filename='images/about-img-02.jpg')}}" alt="">
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End About us -->
