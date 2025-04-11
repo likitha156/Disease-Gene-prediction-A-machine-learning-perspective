@@ -42,8 +42,6 @@ The results are displayed to the user in an interpretable format.
 Large Files and Additional Resources
 Due to GitHub file size limitations, some large files are stored on Google Drive. You can access them here:
 
-Dataset TSV File: Google Drive Link
-Trained Model File: Google Drive Link
 Conclusion
 This project provides a machine learning-based approach to identifying disease-gene associations, aiding researchers in genetic analysis and disease prediction. By leveraging advanced models, particularly Novel Random Forest, this application achieves high accuracy and facilitates informed decision-making in medical research.
 
